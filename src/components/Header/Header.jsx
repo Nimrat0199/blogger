@@ -52,7 +52,7 @@ function Header() {
     <header className='py-3 static  shadow bg-black'>
       <Container>
         <nav className='flex justify-between '>
-          <h1 className='text-white text-xl md:text-2xl text-red-500 ml-3'>{`hey! ${name}`}</h1>
+          <h1 className='text-xl md:text-2xl text-red-500 ml-3'>{`hey! ${name}`}</h1>
         <ul className={`flex flex-col bg-black items-center gap-2 md:static absolute right-4 ${ham ? 'hidden' : 'flex'} md:flex-row top-14 md:border-0 border-2 rounded-xl border-white  z-50`}>
             {navItems.map((item) => 
             item.active ? (
