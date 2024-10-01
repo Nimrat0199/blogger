@@ -44,6 +44,11 @@ function Header() {
     setHam(!ham);
   }
 
+  const navi =(a)=>{
+    navigate(a)
+    handle()
+  }
+
   useEffect(()=>{
     authStatus ? setName(userData.name) : setName("user")
   },[authStatus])
@@ -58,7 +63,7 @@ function Header() {
             item.active ? (
               <li key={item.name}>
                 <button
-                onClick={() => navigate(item.slug)}
+                onClick={() => navi(item.slug)}
                 className='inline-bock md:px-6 px-24 py-1 duration-200 text-white hover:border-b-2 rounded-full'
                 >{item.name}</button>
               </li>
